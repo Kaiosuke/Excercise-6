@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: #7d7676;
+}
+
+.container--form-contact {
+  width: 760px;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
+
+h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #000;
+  font-weight: 200;
+}
+
+.container--form-contact span {
+  color: red;
+}
+
+.wrapper--form-contact {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper--contact {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  border: 1px solid #ddd;
+}
+
+.wrapper--contact:hover {
+  border: 1px solid #000;
+}
+
+.icon label {
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  color: #fff;
+}
+
+.wrapper--contact input::placeholder {
+  padding-left: 1rem;
+  color: #7d7676;
+}
+
+.wrapper--contact + .wrapper--contact {
+  margin-top: 1.6rem;
+}
+
+.wrapper--contact input,
+.wrapper--contact select {
+  height: 4.2rem;
+  width: 100%;
+  border: none;
+}
+
+.wrapper--contact input {
+  padding-left: 1rem;
+}
+
+.title {
+  position: absolute;
+  padding: 1rem 2rem;
+  background-color: rgb(0, 0, 0, 0.9);
+  color: #fff;
+  left: 1.6em;
+  top: -6rem;
+  display: none;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.9rem;
+  border: 2rem solid;
+  border-color: rgb(0, 0, 0, 0.9) transparent transparent transparent;
+  border-bottom: 0;
+  left: 20%;
+}
+
+.cancel {
+  display: none;
+}
+
+.wrapper--contact input,
+.wrapper--contact select,
+.wrapper--contact textarea {
+  border-radius: 0;
+  outline: none;
+}
+
+.wrapper--contact input:focus ~ .icon label,
+.wrapper--contact input:active ~ .icon label,
+.wrapper--contact select:focus ~ .icon label,
+.wrapper--contact select:active ~ .icon label,
+.wrapper--contact textarea:focus ~ .icon label,
+.wrapper--contact textarea:active ~ .icon label {
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.wrapper--contact input:focus ~ .title,
+.wrapper--contact input:active ~ .title,
+.wrapper--contact select:focus ~ .title,
+.wrapper--contact select:active ~ .title,
+.wrapper--contact textarea:focus ~ .title,
+.wrapper--contact textarea:active ~ .title {
+  display: block;
+}
+
+.wrapper--contact input:hover ~ .icon label,
+.wrapper--contact select:hover ~ .icon label,
+.wrapper--contact textarea:hover ~ .icon label {
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.wrapper--contact input:hover ~ span .active,
+.wrapper--contact select:hover ~ span .active,
+.wrapper--contact textarea:hover ~ span .active {
+  color: #979292;
+}
+
+.wrapper--contact input:focus ~ span .active,
+.wrapper--contact input:active ~ span .active,
+.wrapper--contact select:focus ~ span .active,
+.wrapper--contact select:active ~ span .active,
+.wrapper--contact textarea:focus ~ span .active,
+.wrapper--contact textarea:active ~ span .active {
+  display: none;
+}
+
+.wrapper--contact input:focus ~ span .cancel,
+.wrapper--contact input:active ~ span .cancel,
+.wrapper--contact select:focus ~ span .cancel,
+.wrapper--contact select:active ~ span .cancel,
+.wrapper--contact textarea:focus ~ span .cancel,
+.wrapper--contact textarea:active ~ span .cancel {
+  display: block;
+}
+
+.wrapper--contact input:focus,
+.wrapper--contact input:active {
+  border: none;
+}
+
+.wrapper--contact span i {
+  position: absolute;
+  color: #ddd;
+  font-size: 1rem;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wrapper--contact select {
+  background: transparent;
+  -webkit-appearance: none;
+  color: #7d7676;
+  padding-left: 2rem;
+}
+
+.wrapper--contact textarea {
+  width: 100%;
+  height: 200px;
+  padding: 1.4rem;
+  border: 1px solid #ddd;
+}
+
+.textarea label {
+  height: 200px;
+  align-items: start;
+  padding-top: 10px;
+}
+
+.icon--message i {
+  top: 2rem !important;
+}
+
+.btn--send-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check--box {
+  display: block;
+  position: relative;
+  padding-left: 3.2rem;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.check--box input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.check--box span {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 3px solid #ddd;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check--box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check--box .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-primary {
+  height: 3rem;
+  padding: 0 4rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}

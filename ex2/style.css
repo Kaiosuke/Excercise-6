@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  background-color: #ebf5fe;
+  color: #666666;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container--service-layout {
+  width: 900px;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.wrapper--service {
+  flex: 0 0 30%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
+.service--logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service--logo .logo {
+  border-radius: 50%;
+}
+
+.service--logo .logo i {
+  width: 4rem;
+  height: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  color: #fff !important;
+}
+
+.unique .service--logo .logo i {
+  background: linear-gradient(to right, #e46c67, #d27b78);
+  box-shadow: #e46c67 0px 100px 100px 0px;
+}
+
+.development .service--logo .logo i {
+  background: linear-gradient(to right, #53aaa3, #81d6cf);
+  box-shadow: #53aaa3 0px 100px 100px 0px;
+}
+
+.digital .service--logo .logo i {
+  background: linear-gradient(to right, #e28832, #e29d5c);
+  box-shadow: #e28832 0px 100px 100px 0px;
+}
+
+.design .service--logo .logo i {
+  background: linear-gradient(to right, #3c72d5, #648fdd);
+  box-shadow: #3c72d5 0px 100px 100px 0px;
+}
+
+.responsive .service--logo .logo i {
+  background: linear-gradient(to right, #7123cb, rgb(124, 158, 220));
+  box-shadow: #7123cb 0px 100px 100px 0px;
+}
+
+.support .service--logo .logo i {
+  background: linear-gradient(to right, #64822b, #add466);
+  box-shadow: #64822b 0px 100px 100px 0px;
+}
+
+.wrapper--service.unique:hover {
+  border: 1px solid #e46c67;
+}
+
+.wrapper--service.development:hover {
+  border: 1px solid #53aaa3;
+}
+.wrapper--service.digital:hover {
+  border: 1px solid #e28832;
+}
+.wrapper--service.design:hover {
+  border: 1px solid #3c72d5;
+}
+.wrapper--service.responsive:hover {
+  border: 1px solid #7123cb;
+}
+.wrapper--service.support:hover {
+  border: 1px solid #64822b;
+}
+
+.service--logo h2 {
+  font-size: 1.8rem;
+}
+
+.wrapper--service p {
+  margin-bottom: 1rem;
+}
+
+.wrapper--service a {
+  color: #3f69c9;
+  font-weight: 600;
+}

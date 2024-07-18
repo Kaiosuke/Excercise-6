@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container--form-contact">
+      <form action="#!">
+        <h2>Hey there</h2>
+        <p>
+          <span>We'd like o hear from you.</span> Send us your message or just
+          say hy with our contact form or directly via phone, we love to chat.
+        </p>
+        <div class="wrapper--form-contact">
+          <div class="wrapper--contact">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              title="Enter your name"
+            />
+            <div class="icon">
+              <label for="name">
+                <i class="bi bi-person"></i>
+              </label>
+            </div>
+            <div class="title">Enter your name</div>
+            <span>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-x cancel"></i>
+            </span>
+          </div>
+          <div class="wrapper--contact">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@domain.com"
+              title="Enter your email"
+            />
+            <div class="icon">
+              <label for="email">
+                <i class="bi bi-envelope"></i>
+              </label>
+            </div>
+            <div class="title">Enter your email</div>
+            <span>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-x cancel"></i>
+            </span>
+          </div>
+          <div class="wrapper--contact">
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="44 00 123"
+              title="Enter your phone number"
+            />
+            <div class="icon">
+              <label for="phone">
+                <i class="bi bi-phone"></i>
+              </label>
+            </div>
+            <div class="title">Enter your phone number</div>
+            <span></span>
+          </div>
+          <div class="wrapper--contact">
+            <select name="subject" id="subject" title="Choose subject">
+              <option value="1">Subject</option>
+              <option value="2">Subject 2</option>
+              <option value="3">Subject 3</option>
+            </select>
+            <div class="icon">
+              <label for="subject">
+                <i class="bi bi-wallet2"></i>
+              </label>
+            </div>
+            <div class="title">Choose Subject</div>
+            <span>
+              <i class="bi bi-arrow-down-up active"></i>
+              <i class="bi bi-x cancel"></i>
+            </span>
+          </div>
+          <div class="wrapper--contact">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              title="Enter your message"
+            ></textarea>
+            <div class="icon textarea">
+              <label for="message">
+                <i class="bi bi-chat-left"></i>
+              </label>
+            </div>
+            <div class="title">Enter your message</div>
+            <span class="icon--message">
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-x cancel"></i>
+            </span>
+          </div>
+        </div>
+        <div class="btn--send-contact">
+          <label class="check--box">
+            Send me a copy of this message
+            <input type="checkbox" checked />
+            <span class="checkmark"></span>
+          </label>
+          <button class="btn-primary">SEND</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

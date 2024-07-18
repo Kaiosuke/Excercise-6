@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+.container--menu {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu--logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu--logo img {
+  width: 16rem;
+}
+
+.menu--logo .category {
+  background-color: rgb(221, 221, 221, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 99rem;
+}
+
+.menu--link {
+  position: relative;
+}
+
+.menu--link ul {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.btn--sign button {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: linear-gradient(to right, #394ef4, #b560ec);
+  border: none;
+  border-radius: 6px;
+}
